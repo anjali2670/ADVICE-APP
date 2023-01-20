@@ -2,11 +2,9 @@ import './App.css';
 import React from 'react';
 import axios from 'axios';
 class App extends React.Component {
-state={ advice:'' };
+state={ advice:''};
  
-ComponentDidMount(){
-  this.fetchAdvice();
-}
+
 
 fetchAdvice = () =>{
 
@@ -22,7 +20,7 @@ fetchAdvice = () =>{
         })
 
   }
-
+  
   render(){
     const {advice}= this.state;
   return (
